@@ -1,0 +1,146 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(231, 231, 231);
+	font-weight: 300;
+	color: white;
+}
+
+.title h1 {
+	font-weight: 800;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 0;
+	align-content: center;
+
+}
+
+.content {
+	background-color: rgb(73, 103, 169);
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.form-group {
+	padding: 5px;
+}
+
+#conversion {
+	font-size: 132px;
+	font-weight: 900;
+}
+
+#conversion-title {
+	margin-top: -30px;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.btn {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	background-color: rgb(66, 174, 103);
+	border: none;
+}
+
+.bloco {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.links-box a {
+	border: 1px solid rgba(174, 200, 19, 0.1);
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	color: black;
+	text-decoration: none;
+	position: relative;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-left: 16px;
+	-webkit-animation: fadeIn 600ms ease both;
+	-webkit-animation-play-state: paused;
+	-moz-animation: fadeIn 600ms ease both;
+	-moz-animation-play-state: paused;
+	-o-animation: fadeIn 600ms ease both;
+	-o-animation-play-state: paused;
+	animation: fadeIn 600ms ease both;
+	animation-play-state: paused;
+}
+
+.links-box.play a {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	-o-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.info {
+	background-color: rgba(231, 231, 231, 1.0);
+	border-radius: 4px;
+	color: rgb(73, 103, 169);
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.info h4 {
+	color: rgb(38, 52, 115);
+}
+
+.info a {
+	color: blue;
+}
+
+.info1 {
+	border-right: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.info2 {
+	border-right: 1px dotted rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+	padding: 14px;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media screen and (max-width: 1200px) {
+
+	.navbar-logos {
+		height: 32px;
+	}
+
+	#conversion {
+		font-size: 80px;
+	}
+
+	.info1 {
+		border-right: none;
+	}
+
+	.info2 {
+		border-right: none;
+	}
+}
