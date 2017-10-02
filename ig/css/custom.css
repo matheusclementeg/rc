@@ -1,76 +1,50 @@
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-move-right:before {
-	content: "\e603";
-}
-.icon-move-left:before {
-	content: "\e604";
-}
-.icon-repeat:before {
-	content: "\e605";
-}
-
-* {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
 html, body {
 	height: 100%;
 	min-height: 100%;
 }
+
 @media(min-width: 1200px) {
 	html, body {
 		overflow: hidden;
 	}
 }
+
 body {
-	background-color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(to bottom right, #1BB7D0, #524595);
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	letter-spacing: 1px;
 	color: #fff;
 }
+
 #container {
 	position: relative;
-	box-shadow: 0 0 20px rgb(0,0,0);
 	width: 100%;
 	height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-#container a:focus {
+
+#container span:focus {
 	outline: none;
 }
+
 @media(min-width: 1200px) {
 	#container {
 		height: auto;
 		overflow-y: hidden;
 	}
 }
+
 #container video {
 	display: none;
 }
+
 #container #mobile-infographic {
 	width: 100%;
 	display: block;
 }
+
 @media(min-width: 1200px) {
 	#container #mobile-infographic {
 		display: none;
@@ -80,80 +54,13 @@ body {
 		display: block;
 	}
 }
-#container .gradient {
-	position: absolute;
-	width: 100%;
-	height: 50px;
-}
-#container .gradient.top {
-	top: 0;
-	left: 0;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);
-}
-#container .gradient.bottom {
-	bottom: 0;
-	left: 0;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
-}
-#aspect-warning,
-#height-warning {
-	display: none;
-	position: absolute;
-	background: rgba(0,0,0,.7);
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	color: #fff;
-}
-#aspect-warning p,
-#height-warning p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-}
 
-#video-controls {
-	display: none;
-	transition: .4s opacity;
-}
 @media(min-width: 1200px) {
-	#video-controls {
+	#controles {
 		display: block;
 	}
 }
-#video-controls.dimmed {
-	opacity: 0.25;
-}
-#prev,
-#next {
-	position: absolute;
-	color: #e4ebd4 !important;
-	bottom: 20px;
-	cursor: pointer;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: 700;
-}
-#begin:hover,
-#prev:hover,
-#next:hover,
-#repeat:hover {
-	text-decoration: none;
-	text-shadow: 0 5px #000;
-}
+
 #begin {
 	display: none;
 	position: absolute;
@@ -166,25 +73,45 @@ body {
 	text-transform: uppercase;
 	color: #e4ebd4 !important;
 }
-#repeat {
-	position: absolute;
-	color: #e4ebd4 !important;
-	bottom: 20px;
-	right: 56px;
-	cursor: pointer;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: 700;
-}
+
 @media(min-width: 1200px) {
 	#begin {
 		display: block;
 	}
 }
-#prev {
-	right: 113px;
+
+#controles.dimmed {
+	opacity: 0.25;
 }
-#next {
-	right: 5px;
+
+#controles {
+	transition: .4s opacity;
+	text-shadow: 2px 0px 8px rgba(64,64,64, 0.4);
+
+}
+
+#bar {
+	margin: auto;
+	text-align: center;
+	background: rgba(73, 103, 169, 0.7);
+	bottom: 0px;
+	height: 40px;
+}
+
+#antes {
 	text-align: right;
+}
+
+#repete {
+	text-align: center;
+}
+
+#depois {
+	text-align: left;
+}
+
+#prev, #next, #repeat {
+	cursor: pointer;
+	font-size: 20px;
+	top: 10px;
 }
