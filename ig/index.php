@@ -16,11 +16,12 @@
 
 	<title>O que é Marketing de Conteúdo?</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" rel="stylesheet">
+	<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" rel="stylesheet"> -->
 	<link href="css/loaders.min.css" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
@@ -29,30 +30,32 @@
 
 	<div id="container">
 
-		<video src="motion-infographic.mp4" preload="auto" poster="img/poster.gif" style="max-height: 446px;">
+		<video src="motion-infographic.mp4" preload="auto"
+		poster="img/poster.gif" 
+		style="/*max-height: 446px;*/">
 		</video>
-		<div id="bar" class="col-lg-12">
+		<div id="bar" class="col-lg-12 text-center">
 
 			<div class="col-lg-4"></div>
 			<div id="controles" class="col-lg-4">
 				<div id="antes">
-					<span id="prev" class="col-lg-4 glyphicon glyphicon-step-backward hidden fadeInLeft"></span>
+					<i id="prev" class="col-lg-4 material-icons hidden fadeInLeft">keyboard_arrow_left</i>
 				</div>
 				<div id="repete">
-					<span id="repeat" class="col-lg-4 glyphicon glyphicon-repeat hidden fadeInLeft"></span>
+					<i id="repeat" class="col-lg-4 material-icons hidden fadeInLeft">replay</i>
 				</div>
 				<div id="depois">	
-					<span id="next" class="col-lg-4 glyphicon glyphicon-step-forward hidden fadeInRight"></span>
+					<i id="next" class="col-lg-4 material-icons hidden fadeInLeft">keyboard_arrow_right</i>
+				</div>
+				<div id="begin" class="">
+					<span id="comeco" class="text">Clique para começar</span>
 				</div>
 			</div>
-
+			<div class="col-lg-4">
+				<button type="button" id="cta-perm" class="col-lg-4 btn btn-warning">QUERO FAZER MARKETING!</button>
+			</div>
+			
 		</div>
-		<div id="loader" style="display: none;">
-			<div class="text">Carregando...</div>
-		</div> 
-		<a id="begin" class="fadeInUp animated">
-			<div class="text">Clique para começar</div>
-		</a>
 		
 		<img id="mobile-infographic" src="img/static-infographic.png">
 	</div>

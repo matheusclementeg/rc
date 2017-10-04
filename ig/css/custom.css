@@ -1,3 +1,38 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.lg-18 { font-size: 18px; }
+.material-icons.lg-24 { font-size: 24px; }
+.material-icons.lg-36 { font-size: 36px; }
+.material-icons.lg-48 { font-size: 48px; }
+
 html, body {
 	height: 100%;
 	min-height: 100%;
@@ -61,19 +96,6 @@ body {
 	}
 }
 
-#begin {
-	display: none;
-	position: absolute;
-	bottom: 40px;
-	text-align: center;
-	width: 100%;
-	font-size: 20px;
-	font-weight: 700;
-	cursor: pointer;
-	text-transform: uppercase;
-	color: #e4ebd4 !important;
-}
-
 @media(min-width: 1200px) {
 	#begin {
 		display: block;
@@ -95,7 +117,16 @@ body {
 	text-align: center;
 	background: rgba(73, 103, 169, 0.7);
 	bottom: 0px;
-	height: 40px;
+	height: 60px;
+}
+
+#comeco {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #e4ebd4;
+	text-align: center;
 }
 
 #antes {
@@ -110,8 +141,27 @@ body {
 	text-align: left;
 }
 
-#prev, #next, #repeat {
+#prev {
+	margin-right: -50px;
+    margin-left: 50px;
+}
+
+#next {
+	margin-left: -50px;
+}
+
+#prev, #next, #repeat, #comeco {
 	cursor: pointer;
-	font-size: 20px;
-	top: 10px;
+	top: 20px;
+}
+
+#cta-perm {
+	margin-top: 12px;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	width: 70%;
+
+
 }

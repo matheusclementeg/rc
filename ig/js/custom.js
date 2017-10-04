@@ -45,7 +45,7 @@ $(function () {
 			win_w = $(window).width();
 
 		$('#container video').css({
-			'max-height': win_h - 40
+			'max-height': win_h - 60
 		});
 		$('#container .poster').css({
 			width: $('#container video').width(),
@@ -123,7 +123,6 @@ $(function () {
 	$('#container video').on('timeupdate', function (event) {
 
 	}).on('canplay', function () {
-		// Kill the loader
 		$('#loader').fadeOut();
 		// Show the begin CTA
 		$('#begin').removeClass('hidden').addClass('animated');
