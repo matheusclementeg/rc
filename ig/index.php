@@ -30,10 +30,12 @@
 
 	<div id="container">
 
+		
 		<video src="motion-infographic.mp4" preload="auto"
 		poster="img/poster.gif" 
 		style="/*max-height: 446px;*/">
 		</video>
+
 		<div id="bar" class="col-lg-12 text-center">
 
 			<div class="col-lg-4"></div>
@@ -47,16 +49,26 @@
 				<div id="depois">	
 					<i id="next" class="col-lg-4 material-icons hidden fadeInLeft">keyboard_arrow_right</i>
 				</div>
-				<div id="begin" class="">
+				<div id="begin" class="fadeInUp animate">
 					<span id="comeco" class="text">Clique para começar</span>
 				</div>
 			</div>
-			<div class="col-lg-4">
-				<button type="button" id="cta-perm" class="col-lg-4 btn btn-warning">QUERO FAZER MARKETING!</button>
+			<div id="cta-bar-wrapper" class="col-lg-2" >
+				<!--HubSpot Call-to-Action Code --><button id="cta-perm" class="btn btn-warning">
+					<span class="hs-cta-wrapper" id="hs-cta-wrapper-9d1f0913-121c-4fac-9717-fad8c74c8e0c">
+						<span class="hs-cta-node hs-cta-9d1f0913-121c-4fac-9717-fad8c74c8e0c" id="hs-cta-9d1f0913-121c-4fac-9717-fad8c74c8e0c"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+							<a href="https://cta-redirect.hubspot.com/cta/redirect/355484/9d1f0913-121c-4fac-9717-fad8c74c8e0c"  target="_blank" >
+								<img class="hs-cta-img" id="hs-cta-img-9d1f0913-121c-4fac-9717-fad8c74c8e0c" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/355484/9d1f0913-121c-4fac-9717-fad8c74c8e0c.png"  alt="QUERO FAZER UMA AVALIAÇÃO GRATUITA"/>
+							</a>
+						</span>
+						<script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+						<script type="text/javascript"> hbspt.cta.load(355484, '9d1f0913-121c-4fac-9717-fad8c74c8e0c', {}); </script>
+					</span>
+				</button><!-- end HubSpot Call-to-Action Code -->
 			</div>
-			
+			<div class="col-lg-2"></div>
 		</div>
-		
+
 		<img id="mobile-infographic" src="img/static-infographic.png">
 	</div>
 
