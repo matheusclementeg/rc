@@ -52,6 +52,16 @@ body {
 	color: #fff;
 }
 
+@media(max-width: 768px) {
+	body {
+		background: #f7f7f7;
+	}
+
+	#bar {
+		display: none;
+	}
+}
+
 #container {
 	position: relative;
 	width: 100%;
@@ -81,6 +91,7 @@ body {
 }
 
 @media(min-width: 1200px) {
+
 	#container #mobile-infographic {
 		display: none;
 	}

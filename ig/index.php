@@ -49,7 +49,7 @@
 		style="/*max-height: 446px;*/">
 		</video>
 
-		<div id="bar" class="col-lg-12 text-center">
+		<div id="bar" class="col-xl-12 col-lg-12 col-md-12 col-sm-hidden text-center">
 
 			<div class="col-lg-4"></div>
 			<div id="controles" class="col-lg-4">
